@@ -18,6 +18,7 @@ body {
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 18px;
   max-width: 1440px;
+  background: url(../images/bg-header-desktop.png) no-repeat;
 }
 
 h1,
@@ -32,16 +33,17 @@ p {
 
 /* HEADER BACKGROUND AND LOGO */
 header {
-  position: relative;
+  /* position: relative; */
   text-align: center;
+  margin-top: 125px;
   margin-bottom: 125px;
 }
 
-.header-bg {
+/* .header-bg {
   z-index: -1;
-}
+} */
 
-header .logo {
+/* header .logo {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -50,12 +52,12 @@ header .logo {
   right: 0;
   bottom: 0;
   margin: auto;
-}
+} */
 
 /* HEADER INFO */
 .header-info {
   text-align: center;
-  margin: -100px auto 0px;
+  /* margin: -100px auto 0px; */
 }
 
 .header-info h1 {
@@ -86,6 +88,7 @@ header .logo {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .ios-btn {
@@ -94,6 +97,11 @@ header .logo {
 
 .mac-btn {
   background-color: var(--light-blue);
+}
+
+.ios-btn:hover,
+.mac-btn:hover {
+  opacity: 0.8;
 }
 
 /* SECTIONS */
@@ -210,6 +218,8 @@ footer {
   align-items: center;
 }
 
+/* FOOTER MENU */
+
 .footer .ftr-menu {
   display: flex;
   justify-content: flex-start;
@@ -227,6 +237,15 @@ footer {
 
 .footer .ftr-menu .menu-items li {
   padding: 10px 0px;
+}
+
+.ftr-menu .menu-items li a {
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+}
+
+.ftr-menu .menu-items li a:hover {
+  color: var(--strong-cyan);
 }
 
 .footer .logo-ftr img {
