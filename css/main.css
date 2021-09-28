@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --footer-bg: #f5f6f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  max-width: 1440px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-grayish-blue);
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
+/* HEADER BACKGROUND AND LOGO */
+header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 125px;
+}
+
+.header-bg {
+  z-index: -1;
+}
+
+header .logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* HEADER INFO */
+.header-info {
+  text-align: center;
+  margin: -100px auto 0px;
+}
+
+.header-info h1 {
+  font-size: 2.5em;
+  max-width: 65%;
+  margin: 35px auto 15px;
+}
+
+.header-info p {
+  font-size: 1.15em;
+  line-height: 1.4em;
+  max-width: 52%;
+  margin: 0px auto 30px;
+}
+
+/* DOWNLOAD BUTTONS */
+.download-btn {
+  text-align: center;
+}
+
+.download-btn .btn {
+  font-size: 1em;
+  color: #fff;
+  padding: 15px 40px;
+  margin: 15px 5px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.ios-btn {
+  background-color: var(--strong-cyan);
+}
+
+.mac-btn {
+  background-color: var(--light-blue);
+}
+
+/* SECTIONS */
+section .section-info {
+  max-width: 52%;
+  text-align: center;
+  margin: 100px auto;
+}
+
+section .section-info h2 {
+  font-size: 1.91em;
+  margin-bottom: 15px;
+}
+
+section .section-info p {
+  font-size: 1.05em;
+}
+
+section .section-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .section-card .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 100%;
+  margin: 6% 0% 3%;
+}
+
+.card-info .text-info {
+  max-width: 55%;
+  height: 100%;
+  margin: 0px 100px;
+}
+
+.card-info .text-info h3 {
+  margin-bottom: 10px;
+}
+
+.card-info .text-info p {
+  margin-bottom: 10px;
+}
+
+/* SECTION WITH DEVICES IMAGE */
+section .devices-img {
+  text-align: center;
+}
+
+/* SERVICES SECTION */
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 125px;
+}
+
+.services .services-card {
+  width: 80%;
+  padding: 10px;
+}
+
+.services .services-card .services-img {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services .services-card h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.services .services-card p {
+  text-align: center;
+}
+
+/* CLIENTS LOGOS */
+.our-clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 125px;
+}
+
+/* LAST SECTION */
+section .clipboard {
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--footer-bg);
+  padding: 50px 150px 20px;
+  margin-top: 125px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .ftr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer .ftr-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 100px;
+}
+
+.footer .ftr-menu .menu-items {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-right: 75px;
+  padding: 100px 0px;
+}
+
+.footer .ftr-menu .menu-items li {
+  padding: 10px 0px;
+}
+
+.footer .logo-ftr img {
+  max-width: 75px;
+  max-height: 75px;
+}
+
+/* SOCIAL ICONS */
+.footer .social-icons i {
+  margin-left: 20px;
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution hr {
+  border-color: hsla(233, 100%, 69%, 0.336);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
