@@ -31,33 +31,15 @@ p {
   color: var(--grayish-blue);
 }
 
-/* HEADER BACKGROUND AND LOGO */
+/* HEADER */
 header {
-  /* position: relative; */
   text-align: center;
-  margin-top: 125px;
-  margin-bottom: 125px;
+  margin: 125px auto;
 }
-
-/* .header-bg {
-  z-index: -1;
-} */
-
-/* header .logo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-} */
 
 /* HEADER INFO */
 .header-info {
   text-align: center;
-  /* margin: -100px auto 0px; */
 }
 
 .header-info h1 {
@@ -202,7 +184,7 @@ section .clipboard {
 /* FOOTER */
 footer {
   background-color: var(--footer-bg);
-  padding: 50px 150px 20px;
+  padding: 20px 150px 20px;
   margin-top: 125px;
 }
 
@@ -236,6 +218,7 @@ footer {
 }
 
 .footer .ftr-menu .menu-items li {
+  font-size: 0.75em;
   padding: 10px 0px;
 }
 
@@ -249,8 +232,8 @@ footer {
 }
 
 .footer .logo-ftr img {
-  max-width: 75px;
-  max-height: 75px;
+  max-width: 60px;
+  max-height: 60px;
 }
 
 /* SOCIAL ICONS */
@@ -275,4 +258,318 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1100px) {
+  /* HEADER */
+  header {
+    max-width: 1100px;
+    margin-bottom: 100px;
+  }
+
+  .header-info h1 {
+    font-size: 1.75em;
+    max-width: 75%;
+  }
+
+  .header-info p {
+    font-size: 1em;
+    max-width: 69%;
+  }
+
+  /* DOWNLOAD BUTTONS */
+  .download-btn .btn {
+    font-size: 0.75em;
+    padding: 10px 30px;
+  }
+
+  /* SECTIONS */
+  section .section-info {
+    max-width: 69%;
+    text-align: center;
+    margin: 100px auto;
+  }
+
+  section .section-info h2 {
+    font-size: 1.5em;
+  }
+
+  section .section-info p {
+    font-size: 0.9em;
+  }
+
+  section .section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  section .section-card .section-img {
+    text-align: center;
+  }
+  section .section-card .section-img img {
+    max-width: 80%;
+  }
+
+  section .section-card .card-info {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% auto 4%;
+    text-align: center;
+  }
+
+  .card-info .text-info {
+    max-width: 70%;
+    margin: 0px 0px;
+  }
+
+  .card-info .text-info h3 {
+    font-size: 1.35em;
+    margin-top: 50px;
+  }
+
+  .card-info .text-info p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  /* SECTION WITH DEVICES IMAGE */
+  section .devices-img img {
+    width: 80%;
+  }
+
+  /* SERVICES SECTION */
+  .services {
+    width: 90%;
+    margin-bottom: 100px;
+  }
+
+  /* CLIENTS LOGOS */
+  .our-clients {
+    width: 85%;
+    margin-bottom: 100px;
+  }
+
+  .our-clients img {
+    width: 70%;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 15px 50px 25px;
+    margin-top: 100px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .footer .ftr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  /* FOOTER MENU */
+
+  .footer .ftr-menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+  }
+
+  .footer .ftr-menu .menu-items {
+    margin-right: 50px;
+    padding: 50px 0px;
+  }
+
+  .footer .ftr-menu .menu-items li {
+    padding: 5px 0px;
+  }
+
+  .ftr-menu .menu-items li a {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+  }
+
+  .ftr-menu .menu-items li a:hover {
+    color: var(--strong-cyan);
+  }
+
+  .footer .logo-ftr img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  /* SOCIAL ICONS */
+  .footer .social-icons i {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  header {
+    max-width: 768px;
+    margin-bottom: 90px;
+  }
+
+  .header-info h1 {
+    font-size: 1.7em;
+    max-width: 85%;
+  }
+
+  .header-info p {
+    font-size: 0.92em;
+    max-width: 85%;
+  }
+
+  /* DOWNLOAD BUTTONS */
+  .download-btn {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .download-btn .btn {
+    font-size: 0.9em;
+    margin-bottom: 0px;
+    padding: 20px 30px;
+  }
+
+  /* SECTIONS */
+  section .section-info {
+    max-width: 85%;
+  }
+
+  section .section-info p {
+    font-size: 0.94em;
+  }
+
+  section .section-card {
+    max-width: 90%;
+  }
+
+  section .section-card .section-img {
+    margin-top: -25px;
+  }
+  section .section-card .section-img img {
+    max-width: 90%;
+  }
+
+  .card-info .text-info {
+    max-width: 90%;
+  }
+
+  .card-info .text-info h3 {
+    font-size: 1.15em;
+    margin-top: 40px;
+  }
+
+  .card-info .text-info p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  /* SECTION WITH DEVICES IMAGE */
+  section .devices-img img {
+    width: 90%;
+    margin-top: -35px;
+  }
+
+  /* SERVICES SECTION */
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 80px;
+  }
+
+  .services .services-card p {
+    font-size: 0.7em;
+  }
+
+  /* CLIENTS LOGOS */
+  .our-clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 0px auto -25px;
+  }
+
+  .our-clients img {
+    width: 70%;
+    margin-bottom: 40px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 40px 30px 15px;
+    margin-top: 80px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer .ftr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  /* FOOTER MENU */
+
+  .footer .ftr-menu {
+    display: block;
+    margin: 40px auto;
+  }
+
+  .footer .ftr-menu .menu-items {
+    margin-right: 0px;
+    padding: 0px 0px;
+    text-align: center;
+  }
+
+  .footer .ftr-menu .menu-items li {
+    padding: 15px 0px;
+  }
+
+  .footer .logo-ftr img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  /* SOCIAL ICONS */
+  .footer .social-icons i {
+    margin-left: 0px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: url(../images/bg-header-mobile.png) no-repeat;
+  }
+
+  .services {
+    width: 90%;
+  }
 }
